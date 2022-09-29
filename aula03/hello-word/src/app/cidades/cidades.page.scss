@@ -1,0 +1,48 @@
+.header-top{
+  background-color: #19133E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.header-bottom{
+  background: #ffff;
+}
+
+.breadcr{
+  padding: 10px;
+}
+
+.destino{
+  color: black;
+  margin-bottom: 20px;
+}
+
+.text{
+  text-align: justify;
+  color: black;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.accordion{
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-weight: bold;
+}
+
+.ion-padding{
+  color: rgb(65, 65, 65);
+}
+
+.button{
+  display: flex;
+  margin: 30px;
+}
