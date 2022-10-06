@@ -1,0 +1,86 @@
+<ion-header>
+  <div class="header-top">
+    <img src="../../assets/Logo.png" width="150px" height="78px">
+  </div>
+
+  <div class="header-bottom">
+    <ion-breadcrumbs class="breadcr">
+      <ion-breadcrumb href="#home">Home</ion-breadcrumb>
+      <ion-breadcrumb href="#electronics">Cidades</ion-breadcrumb>
+      <ion-breadcrumb href="#cameras">Lista</ion-breadcrumb>
+    </ion-breadcrumbs>
+  </div>
+
+</ion-header>
+
+<ion-content class="content"  [fullscreen]="true">
+  
+  <ion-card class="card">
+    <img src="../../assets/Rectangle 5.png">
+    <ion-card-header>
+      <ion-card-subtitle class="destino">Destino</ion-card-subtitle>
+      <ion-card-title>LONDRINA, PR</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="text">
+      Londrina é um município brasileiro localizado no estado do Paraná, na Região Sul do Brasil, distando 381 km da
+      capital paranaense, Curitiba. É considerada pela CGU a cidade mais transparente do Paraná.
+    </ion-card-content>
+    <ion-button (click)="goToPage()" class="button">VISUALIZAR CIDADE</ion-button>
+  </ion-card>
+
+  <ion-card class="card">
+    <img src="../../assets/Rectangle 5 (1).png">
+    <ion-card-header>
+      <ion-card-subtitle class="destino">Destino</ion-card-subtitle>
+      <ion-card-title>CURITIBA, PR</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="text">
+      Curitiba é a capital do estado do Paraná, na região sul do Brasil. A Torre Panorâmica, que tem um observatório em
+      sua parte superior, destaca-se na silhueta da cidade.
+    </ion-card-content>
+    <ion-button class="button">VISUALIZAR CIDADE</ion-button>
+  </ion-card>
+
+  <ion-card class="card">
+    <img src="../../assets/Rectangle 5 (2).png">
+    <ion-card-header>
+      <ion-card-subtitle class="destino">Destino</ion-card-subtitle>
+      <ion-card-title>MARINGÁ, PR</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="text">
+      Maringá é um município brasileiro do estado do Paraná, sendo uma cidade média-grande planejada e de urbanização
+      recente.
+    </ion-card-content>
+    <ion-button class="button">VISUALIZAR CIDADE</ion-button>
+  </ion-card>
+
+</ion-content>
+
+
+<!-- 
+<ion-header class="header" [translucent]="true">
+  <img src = "../../assets/Logo.png">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer"
+        href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+
+  <ion-card>
+    <img src="../../assets/shapes.svg">
+    <ion-card-header>
+      <ion-card-subtitle>Destino</ion-card-subtitle>
+      <ion-card-title>Londrina, PR</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Londrina é um município brasileiro localizado no estado do Paraná, na Região Sul do Brasil, distando 381 km da
+      capital paranaense, Curitiba. É considerada pela CGU a cidade mais transparente do Paraná.
+    </ion-card-content>
+  </ion-card>
+
+</ion-content> -->
