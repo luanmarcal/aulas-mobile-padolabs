@@ -7,11 +7,11 @@
 
     <div class="container">
 
-      <ion-input class="input" placeholder="LOGIN"></ion-input>
+      <ion-input [(ngModel)]="userEmail" class="input" placeholder="LOGIN"></ion-input>
 
-      <ion-input class="input" type="password" placeholder="SENHA"></ion-input>
+      <ion-input [(ngModel)]="userPassword" class="input" type="password" placeholder="SENHA"></ion-input>
 
-      <ion-button class="button">ENTRAR</ion-button>
+      <ion-button  (click)="Login()" class="button">ENTRAR</ion-button>
 
       <p>NÃO TEM CONTA? <a (click)="goToPage()" text-decoration="none">REGISTRE-SE</a></p> 
 

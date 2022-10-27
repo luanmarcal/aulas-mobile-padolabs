@@ -1,0 +1,69 @@
+<ion-header>
+  <div class="header-top">
+    <img src="../../assets/Logo.png" width="150px" height="78px">
+  </div>
+
+</ion-header>
+
+<ion-content>
+  <div class="content">
+    <p>SELECIONE UMA REGIÃO</p>
+<div class="cards">
+
+  <ion-card class="background-image">
+    <img src="../../assets/background-city.png" alt="image"  (click)="goToPage()">
+    <p class="bottom-left">SUL</p>
+    </ion-card>
+    
+    <ion-card class="background-image">
+      <img src="../../assets/background-city.png" alt="image">
+      <p class="bottom-left">SUDESTE</p>
+    </ion-card>
+    
+    <ion-card class="background-image">
+      <img src="../../assets/background-city.png" alt="image">
+      <p class="bottom-left">NORTE</p>
+    </ion-card>
+    
+    <ion-card class="background-image">
+      <img src="../../assets/background-city.png" alt="image">
+      <p class="bottom-left">NORDESTE</p>
+    </ion-card>
+    
+    <ion-card class="background-image">
+      <img src="../../assets/background-city.png" alt="image">
+      <p class="bottom-left">CENTRO-OESTE</p>
+    </ion-card>
+    
+  </div>
+    
+    
+    
+
+  </div>
+</ion-content>
+
+<ion-toolbar class="toolbar">
+
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button tab="speakers">
+        <ion-icon name="home-outline"></ion-icon>
+
+      </ion-tab-button>
+
+      <ion-tab-button tab="map">
+        <ion-icon name="star-outline"></ion-icon>
+
+      </ion-tab-button>
+
+      <ion-tab-button tab="about">
+        <ion-icon name="person-outline"></ion-icon>
+
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-toolbar>

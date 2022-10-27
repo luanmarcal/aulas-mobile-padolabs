@@ -1,12 +1,15 @@
-<ion-header class="header">
-  <div class="flecha">
-    <a><img src="../../assets/flecha.png"> </a>
-  </div>
+<ion-header>
+  <div class="header">
 
-  <div class="perfil">
-    <p>MEU PERFIL</p>
-  </div>
+    <div class="flecha">
+      <a><img src="../../assets/flecha.png" (click)="goToPage02()"> </a>
+    </div>
 
+    <div class="perfil">
+      <p>MEU PERFIL</p>
+    </div>
+
+  </div>
 </ion-header>
 
 <ion-content>
@@ -23,7 +26,7 @@
 
       <div class="content_mid">
 
-        <div class="space-div">
+        <div class="space-div02">
           <p>Email</p>
 
           <p>henriquebfc@gmail.com</p>
@@ -33,41 +36,70 @@
         <div class="space-div02">
           <p>Nome</p>
 
-          <p>Henrique Carlos  <img src="../../assets/flecha02.png"> </p>
+          <div class="internate-div">
+
+            <p>Henrique Carlos </p>
+
+            <ion-icon class="arrow" name="chevron-forward-outline" color="secondary"></ion-icon>
+          </div>
         </div>
 
-        <div class="space-div03">
+        <div class="space-div02">
           <p>Idioma</p>
 
-          <p>Português(Brasil) <img src="../../assets/flecha02.png"> </p>
+          <div class="internate-div">
+
+            <p>Português(Brasil)</p>
+
+            <ion-icon class="arrow" name="chevron-forward-outline" color="secondary"></ion-icon>
+          </div>
         </div>
 
         <hr color="#3D3D3D">
       </div>
-      
-      <div class="content_bot">
 
-      
+      <div class="content_mid">
+
         <div class="space-div">
-          <p>Email</p>
+          <div class="internate-div">
+            <ion-icon class="icon-settings" name="settings-outline" color="light"></ion-icon>
 
-          <p>henriquebfc@gmail.com</p>
+            <p>Configurações do Sistema</p>
+          </div>
+
+          <ion-icon class="arrow" name="chevron-forward-outline" color="secondary"></ion-icon>
         </div>
 
 
-        <div class="space-div02">
-          <p>Nome</p>
+        <div class="space-div">
 
-          <p>Henrique Carlos  <img src="../../assets/flecha02.png"> </p>
+          <div class="internate-div">
+            <ion-icon class="icon-settings" name="help-circle-outline" color="light"></ion-icon>
+
+            <p>Ajuda</p>
+          </div>
+
+          <ion-icon class="arrow" name="chevron-forward-outline" color="secondary" (click)="goToPage()"></ion-icon>
         </div>
 
-        <div class="space-div03">
-          <p>Idioma</p>
+        <div class="space-div">
+          <div class="internate-div">
+            <ion-icon class="icon-settings" name="notifications-outline" color="light"></ion-icon>
 
-          <p>Português(Brasil) <img src="../../assets/flecha02.png"> </p>
+            <p>Notificações</p>
+          </div>
+
+          <ion-icon class="arrow" name="chevron-forward-outline" color="secondary"></ion-icon>
         </div>
 
+
+        <hr color="#3D3D3D">
       </div>
+
+
+
+
+
 
     </div>
 

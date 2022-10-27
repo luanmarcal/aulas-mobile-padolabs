@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'ajuda',
     loadChildren: () => import('./ajuda/ajuda.module').then( m => m.AjudaPageModule)
   },
+  {
+    path: 'regioes',
+    loadChildren: () => import('./regioes/regioes.module').then( m => m.RegioesPageModule)
+  },
 ];
 
 @NgModule({

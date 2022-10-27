@@ -16,4 +16,8 @@ export class HomePage {
     this.router.navigate(['/cidades']);
   }
 
+  // goToPageInit() {
+  //   this.router.navigate(['/regioes']);
+  // }
+
 }

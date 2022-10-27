@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoginService } from '../login.service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,10 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
-  constructor(private router: Router)  { }
+  constructor(private router: Router, private LoginService: LoginService)  { }
+
+  public userEmail: String = null
+  public userPassword: String = null
 
   ngOnInit() {
   }
@@ -16,4 +20,16 @@ export class LoginPage implements OnInit {
   goToPage() {
     this.router.navigate(['/register']);
   }
+
+  Login() {
+    const data = {
+      userEmail: this.userEmail,
+      userPassword: this.userPassword
+    }
+    this.LoginService.userLogin(data).subscribe((response) => {
+      console.log(response);
+      this.router.navigate(['/regioes']);
+    });
+  }
+
 }
