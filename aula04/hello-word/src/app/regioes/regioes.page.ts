@@ -17,7 +17,7 @@ export class RegioesPage implements OnInit {
   ngOnInit() {
   }
 
-  goToPage() {
-    this.router.navigate(['/home']);
+  goToPage(regiao) {
+    this.router.navigate(['/home'], { state: { dados: regiao } });
   }
 }

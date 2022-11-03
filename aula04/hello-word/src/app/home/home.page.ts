@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CidadesService } from '../cidades.service';
+import { CidadesPage } from '../cidades/cidades.page';
 
 @Component({
   selector: 'app-home',
@@ -7,17 +9,31 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  cidades: any;
+  regiao: string;
 
-  constructor(private router: Router) {
+  constructor(
+    private router: Router, 
+    private cidadesService: CidadesService
 
+  ) {
+    this.cidades = [];
+    this.regiao = '';
   }
 
-  goToPage() {
-    this.router.navigate(['/cidades']);
+  goToPage(Cidade) {
+    console.log(Cidade);
+    this.router.navigate(['/cidades'], { state: { dados: Cidade } });
   }
 
-  // goToPageInit() {
-  //   this.router.navigate(['/regioes']);
-  // }
+  ngOnInit() {
+    this.regiao = history.state.dados;
+    console.log(this.regiao);
+
+    this.cidadesService.obterCidadesByRegion(this.regiao).subscribe((data) => {
+      this.cidades = data;
+      console.log(data);
+    });
+  }
 
 }

@@ -13,9 +13,21 @@
 
 </ion-header>
 
-<ion-content class="content"  [fullscreen]="true">
-  
-  <ion-card class="card">
+<ion-content class="content" [fullscreen]="true">
+
+  <ion-card class="card" *ngFor="let cidade of cidades">
+    <img [src]="cidade.cityImage">
+    <ion-card-header>
+      <ion-card-subtitle class="destino">Destino</ion-card-subtitle>
+      <ion-card-title>{{cidade.cityName}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="text">
+      <p>{{cidade.cityShortDescription}}</p>
+    </ion-card-content>
+    <ion-button (click)="goToPage(cidade)" class="button">VISUALIZAR CIDADE</ion-button>
+  </ion-card>
+
+  <!-- <ion-card class="card">
     <img src="../../assets/Rectangle 5.png">
     <ion-card-header>
       <ion-card-subtitle class="destino">Destino</ion-card-subtitle>
@@ -52,6 +64,6 @@
       recente.
     </ion-card-content>
     <ion-button class="button">VISUALIZAR CIDADE</ion-button>
-  </ion-card>
+  </ion-card> -->
 
 </ion-content>

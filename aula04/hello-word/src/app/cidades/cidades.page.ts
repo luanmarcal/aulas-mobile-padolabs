@@ -9,17 +9,19 @@ import { Router } from '@angular/router';
 
 })
 export class CidadesPage implements OnInit {
-
+  Cidades: any;
 
   constructor(private router: Router) {
-
+    this.Cidades = [];
   }
 
   ngOnInit() {
+    this.Cidades = history.state.dados;
+    console.log(this.Cidades);
   }
 
   goToPage() {
-    this.router.navigate(['/home']);
+    this.router.navigate(['/regioes']);
   }
 
 }

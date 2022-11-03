@@ -8,37 +8,35 @@
 <ion-content>
   <div class="content">
     <p>SELECIONE UMA REGIÃO</p>
-<div class="cards">
+    <div class="cards">
 
-  <ion-card class="background-image">
-    <img src="../../assets/background-city.png" alt="image"  (click)="goToPage()">
-    <p class="bottom-left">SUL</p>
-    </ion-card>
-    
-    <ion-card class="background-image">
-      <img src="../../assets/background-city.png" alt="image">
-      <p class="bottom-left">SUDESTE</p>
-    </ion-card>
-    
-    <ion-card class="background-image">
-      <img src="../../assets/background-city.png" alt="image">
-      <p class="bottom-left">NORTE</p>
-    </ion-card>
-    
-    <ion-card class="background-image">
-      <img src="../../assets/background-city.png" alt="image">
-      <p class="bottom-left">NORDESTE</p>
-    </ion-card>
-    
-    <ion-card class="background-image">
-      <img src="../../assets/background-city.png" alt="image">
-      <p class="bottom-left">CENTRO-OESTE</p>
-    </ion-card>
-    
-  </div>
-    
-    
-    
+      <ion-card class="background-image" (click)="goToPage('Sul')">
+        <img src="../../assets/background-city.png" alt="image"/>
+        <p class="bottom-left">SUL</p>
+      </ion-card>
+
+      <ion-card class="background-image" (click)="goToPage('Sudeste')">
+        <img src="../../assets/background-city.png" alt="image">
+        <p class="bottom-left">SUDESTE</p>
+      </ion-card>
+
+      <ion-card class="background-image" (click)="goToPage('Norte')">
+        <img src="../../assets/background-city.png" alt="image">  
+        <p class="bottom-left">NORTE</p>
+      </ion-card>
+
+      <ion-card class="background-image" (click)="goToPage('Nordeste')">
+        <img src="../../assets/background-city.png" alt="image">
+        <p class="bottom-left">NORDESTE</p>
+      </ion-card>
+
+      <ion-card class="background-image" (click)="goToPage('Centro-Oeste')">
+        <img src="../../assets/background-city.png" alt="image">
+        <p class="bottom-left">CENTRO-OESTE</p>
+      </ion-card>
+
+    </div>
+
 
   </div>
 </ion-content>
